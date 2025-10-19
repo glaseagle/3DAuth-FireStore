@@ -18,12 +18,14 @@
 				(W, A, S, D = Move, SPACE = Jump, SPACEx2 = Double Jump, MOUSE = Look around, C = Crouch, SHIFT = Walk)
 			</div>
 		</div>
-        <div id="timer">
-            <span class="timertext">Timer -</span>
-            <span class="timertext" id="minutes"></span>
-            <span class="timertext" id="break">:</span>
-            <span class="timertext" id="seconds"></span>
+        <div id="ui-overlay">
+            <div id="auth-panel">
+                <button id="auth-button" type="button">Sign In</button>
+                <span id="auth-status"></span>
+            </div>
+            <input id="floating-input" type="text" autocomplete="off" maxlength="240" placeholder="Sign in to add a note">
         </div>
+        <div id="timeline"></div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r78/three.min.js"></script>
         <script type="application/x-glsl" id="sky-vertex">
             varying vec2 vUV;
@@ -46,5 +48,6 @@
         <script src="js/FPSControls.js"></script>
         <script src="js/pointerlock.js"></script>
         <script src="js/example.js"></script>
+        <script type="module" src="main.js"></script>
     </body>
 </html>
