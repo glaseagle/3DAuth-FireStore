@@ -1,4 +1,6 @@
 # FPS Controls for Three.js
+This project now blends the original Three.js FPS controller demo with a spatial message board. Explore the level with pointer-lock controls and leave floating notes that stay right where you dropped them.
+
 A 3D platformer game made with Three.js. The aim of the game is to the get to the top of the crates, at which point they will back to their rightful
 place on the moons surface in an orderly fashion.
 
@@ -12,6 +14,12 @@ three.js examples page/repo. The controls add additional benefits:
 * Crouching
 * Walking
 * Elementary collision detection with specified objects
+* Collaborative message board that anchors notes in world space
+
+# Message Board
+* Sign in with Google (prompted from the UI) to add a note.
+* Press `/` to open the popup, type your message, and hit Enter to drop it at your current location.
+* Messages remember their placement and are shared live with connected players via Firebase.
 
 # Future Plans
 
